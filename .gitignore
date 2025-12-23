@@ -1,0 +1,37 @@
+# Compiled object files
+*.o
+*.obj
+
+# Compiled binary files
+*.exe
+*.dll
+*.so
+*.out
+
+# Build directories
+build/
+bin/
+Debug/
+Release/
+
+# Backup files
+*~
+*.bak
+*.save.*
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.user
+
+# Dependency folders (if not tracked)
+deps/
+
+# Ignore folder
+backup/
+examples/
+
+analysis.txt
+gmon.out
