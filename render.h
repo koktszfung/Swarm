@@ -14,8 +14,8 @@ Camera* camera_create(float x, float y, float speed, float scale);
 void camera_destroy(Camera* camera);
 
 typedef struct {
-    SDL_Texture* texture;
-    SDL_Rect* rects;
+    SDL_Texture *texture;
+    SDL_Rect *rects;
     int first, last;
     int glyph_height, glyph_width;
     int total_height, total_width;

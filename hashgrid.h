@@ -23,13 +23,13 @@ typedef struct {
     float     cell_dim;
 } HashGrid;
 
-static inline uint64_t cell_key(HashGrid *hashgrid, float x, float y) {
+static inline uint64_t cell_key(HashGrid* hashgrid, float x, float y) {
     uint64_t cx = floorf(x / hashgrid->cell_dim);
     uint32_t cy = floorf(y / hashgrid->cell_dim);
     return (cx << 32) | cy;
 }
 
 HashGrid* hashgrid_create(size_t pool_capacity, size_t cell_capacity, float cell_dim);
-void hashgrid_add(HashGrid *hashgrid, float x, float y, size_t i);
-void hashgrid_clear(HashGrid *hashgrid);
-void hashgrid_destroy(HashGrid *hashgrid);
+void hashgrid_add(HashGrid* hashgrid, float x, float y, size_t i);
+void hashgrid_clear(HashGrid* hashgrid);
+void hashgrid_destroy(HashGrid* hashgrid);
